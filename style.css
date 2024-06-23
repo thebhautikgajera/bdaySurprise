@@ -27,15 +27,6 @@ body {
     position: relative;
 }
 
-#mouseFollow {
-    height: 5vw;
-    width: 5vw;
-    background-color: black;
-    border-radius: 50%;
-    font-size: 1vw;
-    text-align: center;
-}
-
 .birthdayimg {
     background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
     height: 100%;
@@ -114,7 +105,10 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        font-size: 10vw;
+    }
+
+    .container>p{
+        font-size: 7.5vw;
     }
 
     #countDown{
@@ -131,5 +125,13 @@ body {
         transform: translate(-50%, -50%);
         text-align: center;
         font-size: 4vw;
+    }
+
+    .container>p{
+        font-size: 7.5vw;
+    }
+
+    #countDown{
+        font-size: 5vw;
     }
 }
