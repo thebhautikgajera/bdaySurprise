@@ -22,11 +22,14 @@ var countdownfunction = setInterval(function () {
 
 var mySong = document.getElementById("songs");
 var clickable = document.getElementById("middle");
+var count = 0;
 
-clickable.onclick = function () {
-    if (mySong.pause) {
-        mySong.play();
-    } else {
-        mySong.pause();
-    }
+function playpause() {
+  if (count == 0) {
+    count = 1;
+    mySong.play();
+  } else {
+    count = 0;
+    mySong.pause();
+  }
 }
