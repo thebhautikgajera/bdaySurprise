@@ -11,6 +11,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 #main {
@@ -19,7 +20,7 @@ body {
     position: relative;
 }
 
-#mouseFollow{
+#mouseFollow {
     height: 5vw;
     width: 5vw;
     background-color: black;
@@ -44,6 +45,56 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.container>p {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+/* CSS3 Type Animation */
+
+.container>p {
+    animation: type 4s steps(60, end);
+    /* Chrome and Safari Optimisation */
+    -webkit-animation: type 4s steps(60, end) infinite;
+    /* Firefox Optimisation */
+    -moz-animation: type 4s steps(60, end) infinite;
+    /* Opera Optimisation */
+    o-animation: type 4s steps(60, end) infinite;
+}
+
+/* Remaining CSS3 Animation */
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+/* Chrome and Safari Optimisation */
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+/* Firefox Optimisation */
+@-moz-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+/* Opera Optimisation */
+@-o-keyframes type {
+    from {
+        width: 0;
+    }
 }
 
 
