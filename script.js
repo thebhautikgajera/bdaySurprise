@@ -18,3 +18,15 @@ var countdownfunction = setInterval(function () {
     window.location = "https://www.instagram.com/the.bhautikk/";
   }
 }, 1000);
+
+
+var mySong = document.getElementById("songs");
+var clickable = document.getElementById("middle");
+
+clickable.onclick = function () {
+    if (mySong.onpause) {
+        mySong.onplay();
+    } else {
+        mySong.onpause();
+    }
+}

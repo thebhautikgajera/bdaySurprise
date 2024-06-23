@@ -19,6 +19,15 @@ body {
     position: relative;
 }
 
+#mouseFollow{
+    height: 5vw;
+    width: 5vw;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 1vw;
+    text-align: center;
+}
+
 .birthdayimg {
     background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
     height: 100%;
