@@ -19,7 +19,6 @@ var countdownfunction = setInterval(function () {
   }
 }, 1000);
 
-
 var mySong = document.getElementById("songs");
 var clickable = document.getElementById("middle");
 var count = 0;
@@ -33,3 +32,11 @@ function playpause() {
     mySong.pause();
   }
 }
+
+document.addEventListener(
+  "contextmenu",
+  function (e) {
+    e.preventDefault();
+  },
+  false
+);
