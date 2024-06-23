@@ -24,9 +24,9 @@ var mySong = document.getElementById("songs");
 var clickable = document.getElementById("middle");
 
 clickable.onclick = function () {
-    if (mySong.onpause) {
-        mySong.onplay();
+    if (mySong.pause) {
+        mySong.play();
     } else {
-        mySong.onpause();
+        mySong.pause();
     }
 }
