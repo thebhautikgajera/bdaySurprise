@@ -15,7 +15,7 @@ var countdownfunction = setInterval(function () {
   if (distance < 0) {
     clearInterval(countdownfunction);
     document.getElementById("countDown").innerHTML = "HAPPY BIRTHDAY SWEETY";
-    window.location = "https://www.instagram.com/the.bhautikk/";
+    window.location = "#";
   }
 }, 1000);
 
