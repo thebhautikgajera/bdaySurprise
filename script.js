@@ -14,7 +14,7 @@ var countdownfunction = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("countDown").innerHTML = "HAPPY BIRTHDAY SWEETY";
+    document.getElementById("countDown").innerHTML = "HAPPY BIRTHDAY!!";
     window.location = "#";
   }
 }, 1000);
